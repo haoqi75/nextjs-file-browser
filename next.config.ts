@@ -1,12 +1,8 @@
-/** @type {import('next').NextConfig} */
+// next.config.js
 const nextConfig = {
+  // 不需要 output: 'export'（除非需要纯静态导出）
   reactStrictMode: true,
-  // Required for Cloudflare Pages
-  images: {
-    unoptimized: true,
-  },
-  // Enable static exports for Cloudflare Pages
-  output: 'export',
-}
+  // 其他配置...
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
